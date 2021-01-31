@@ -2,3 +2,5 @@
 2021/01/31 00:40:45 users.go:27: near ")": syntax error
 2021/01/31 00:44:08 users.go:27: table users has no column named email
 2021/01/31 00:49:23 users.go:27: table users has no column named email
+2021/01/31 16:57:32 todos.go:22: near "m": syntax error
+2021/01/31 18:27:17 users.go:70: no such column: od
