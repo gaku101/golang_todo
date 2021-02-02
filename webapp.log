@@ -4,3 +4,399 @@
 2021/01/31 00:49:23 users.go:27: table users has no column named email
 2021/01/31 16:57:32 todos.go:22: near "m": syntax error
 2021/01/31 18:27:17 users.go:70: no such column: od
+2021/02/02 22:53:25 server.go:3095: http: panic serving 127.0.0.1:54971: template: layout.html:12: function "navbar" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010efa0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc00018ea30)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc00019aee0, 0x44bc1c0, 0x45a0000, 0xc000147b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc00019aee0, 0xc0000a6d00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc00019aee0, 0xc0000a6d00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc00019aee0, 0xc0000a6d00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000158000, 0x45ad200, 0xc00019aee0, 0xc0000a6d00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00010efa0, 0x45adc00, 0xc000096000)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:25 server.go:3095: http: panic serving 127.0.0.1:55334: template: layout.html:12: function "navbar" not defined
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc0001ca280)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc00018eb10)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc00019b0a0, 0x44bc1c0, 0x45a0000, 0xc000184b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc00019b0a0, 0xc0001d4900)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc00019b0a0, 0xc0001d4900)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc00019b0a0, 0xc0001d4900)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000158000, 0x45ad200, 0xc00019b0a0, 0xc0001d4900)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001ca280, 0x45adc00, 0xc00018d280)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:25 server.go:3095: http: panic serving 127.0.0.1:55335: template: layout.html:12: function "navbar" not defined
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc00023e0a0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000204550)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000242540, 0x44bc1c0, 0x45a0000, 0xc000180b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000242540, 0xc000223200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000242540, 0xc000223200)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000242540, 0xc000223200)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000158000, 0x45ad200, 0xc000242540, 0xc000223200)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00023e0a0, 0x45adc00, 0xc000206840)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:41 server.go:3095: http: panic serving 127.0.0.1:55404: template: layout.html:12: function "navbar" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b8f00)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc0000120f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0001880e0, 0x44bc1c0, 0x45a0000, 0xc0000f7b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0001880e0, 0xc000184000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0001880e0, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0001880e0, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0001880e0, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b8f00, 0x45adc00, 0xc000028080)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:41 server.go:3095: http: panic serving 127.0.0.1:55405: template: layout.html:12: function "navbar" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b8fa0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc0000990b0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0001081c0, 0x44bc1c0, 0x45a0000, 0xc000050b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0001081c0, 0xc000184100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0001081c0, 0xc000184100)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0001081c0, 0xc000184100)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0001081c0, 0xc000184100)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b8fa0, 0x45adc00, 0xc0000cc540)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:41 server.go:3095: http: panic serving 127.0.0.1:55406: template: layout.html:12: function "navbar" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001cc000)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc0000121f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0001882a0, 0x44bc1c0, 0x45a0000, 0xc000055b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0001882a0, 0xc000184400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0001882a0, 0xc000184400)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0001882a0, 0xc000184400)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0001882a0, 0xc000184400)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001cc000, 0x45adc00, 0xc000028300)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:42 server.go:3095: http: panic serving 127.0.0.1:55411: template: layout.html:12: function "navbar" not defined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000208000)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000012250)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0002260e0, 0x44bc1c0, 0x45a0000, 0xc000050b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0002260e0, 0xc0000fe300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0002260e0, 0xc0000fe300)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0002260e0, 0xc0000fe300)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0002260e0, 0xc0000fe300)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000208000, 0x45adc00, 0xc0000cc700)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:42 server.go:3095: http: panic serving 127.0.0.1:55412: template: layout.html:12: function "navbar" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0002080a0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000099120)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0002262a0, 0x44bc1c0, 0x45a0000, 0xc000218b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0002262a0, 0xc000222000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0002262a0, 0xc000222000)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0002262a0, 0xc000222000)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0002262a0, 0xc000222000)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002080a0, 0x45adc00, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:42 server.go:3095: http: panic serving 127.0.0.1:55413: template: layout.html:12: function "navbar" not defined
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc0001cc0a0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000012350)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000188460, 0x44bc1c0, 0x45a0000, 0xc000055b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000188460, 0xc000184800)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000188460, 0xc000184800)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000188460, 0xc000184800)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc000188460, 0xc000184800)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001cc0a0, 0x45adc00, 0xc0000284c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:43 server.go:3095: http: panic serving 127.0.0.1:55414: template: layout.html:12: function "navbar" not defined
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0000b9040)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000012390)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000226460, 0x44bc1c0, 0x45a0000, 0xc000218b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000226460, 0xc000222500)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000226460, 0xc000222500)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000226460, 0xc000222500)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc000226460, 0xc000222500)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b9040, 0x45adc00, 0xc00021e300)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:43 server.go:3095: http: panic serving 127.0.0.1:55415: template: layout.html:12: function "navbar" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0000b90e0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000099200)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000108380, 0x44bc1c0, 0x45a0000, 0xc000051b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000108380, 0xc0000fe400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000108380, 0xc0000fe400)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000108380, 0xc0000fe400)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc000108380, 0xc0000fe400)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b90e0, 0x45adc00, 0xc0000cc780)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:43 server.go:3095: http: panic serving 127.0.0.1:55416: template: layout.html:12: function "navbar" not defined
+goroutine 13 [running]:
+net/http.(*conn).serve.func1(0xc0001cc140)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000012480)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000188620, 0x44bc1c0, 0x45a0000, 0xc000055b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000188620, 0xc000184b00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000188620, 0xc000184b00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000188620, 0xc000184b00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc000188620, 0xc000184b00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001cc140, 0x45adc00, 0xc000028680)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:45 server.go:3095: http: panic serving 127.0.0.1:55425: template: layout.html:12: function "navbar" not defined
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc0000b9180)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000012550)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0001887e0, 0x44bc1c0, 0x45a0000, 0xc000051b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0001887e0, 0xc0000fe700)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0001887e0, 0xc0000fe700)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0001887e0, 0xc0000fe700)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0001887e0, 0xc0000fe700)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b9180, 0x45adc00, 0xc0000cc940)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:45 server.go:3095: http: panic serving 127.0.0.1:55426: template: layout.html:12: function "navbar" not defined
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc000208140)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc0002202a0)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000226620, 0x44bc1c0, 0x45a0000, 0xc000218b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000226620, 0xc000222800)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000226620, 0xc000222800)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000226620, 0xc000222800)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc000226620, 0xc000222800)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000208140, 0x45adc00, 0xc00021e4c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:45 server.go:3095: http: panic serving 127.0.0.1:55427: template: layout.html:12: function "navbar" not defined
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc0002081e0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000012590)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0002267e0, 0x44bc1c0, 0x45a0000, 0xc000218b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0002267e0, 0xc000222b00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0002267e0, 0xc000222b00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0002267e0, 0xc000222b00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0002267e0, 0xc000222b00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002081e0, 0x45adc00, 0xc00021e680)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:46 server.go:3095: http: panic serving 127.0.0.1:55432: template: layout.html:12: function "navbar" not defined
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc0001cc1e0)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000220430)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc0002269a0, 0x44bc1c0, 0x45a0000, 0xc000218b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc0002269a0, 0xc000222e00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc0002269a0, 0xc000222e00)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc0002269a0, 0xc000222e00)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc0002269a0, 0xc000222e00)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001cc1e0, 0x45adc00, 0xc00021e840)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:46 server.go:3095: http: panic serving 127.0.0.1:55433: template: layout.html:12: function "navbar" not defined
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc0001cc280)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000220510)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000226b60, 0x44bc1c0, 0x45a0000, 0xc000051b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000226b60, 0xc000185000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000226b60, 0xc000185000)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000226b60, 0xc000185000)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc000226b60, 0xc000185000)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001cc280, 0x45adc00, 0xc000028980)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/02 22:53:46 server.go:3095: http: panic serving 127.0.0.1:55434: template: layout.html:12: function "navbar" not defined
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000b9220)
+	/usr/local/go/src/net/http/server.go:1801 +0x147
+panic(0x44cf3a0, 0xc000099300)
+	/usr/local/go/src/runtime/panic.go:975 +0x47a
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:23
+todo_app/app/controllers.generateHTML(0x45ad200, 0xc000108540, 0x44bc1c0, 0x45a0000, 0xc000052b28, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:16 +0x2be
+todo_app/app/controllers.top(0x45ad200, 0xc000108540, 0xc0000fe800)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:8 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4550538, 0x45ad200, 0xc000108540, 0xc0000fe800)
+	/usr/local/go/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47ca520, 0x45ad200, 0xc000108540, 0xc0000fe800)
+	/usr/local/go/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000108000, 0x45ad200, 0xc000108540, 0xc0000fe800)
+	/usr/local/go/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000b9220, 0x45adc00, 0xc0000cc9c0)
+	/usr/local/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2969 +0x36c
