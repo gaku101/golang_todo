@@ -18,7 +18,7 @@ var err error
 const (
 	tableNameUser    = "users"
 	tableNameTodo    = "todos"
-	tableNameSession = "session"
+	tableNameSessions = "sessions"
 )
 
 func init() {
@@ -49,7 +49,7 @@ func init() {
 		uuid STRING NOT NULL UNIQUE,
 		email STRING,
 		user_id INTEGER,
-		created_at DATETIME)`, tableNameSession)
+		created_at DATETIME)`, tableNameSessions)
 
 	Db.Exec(cmdS)
 }

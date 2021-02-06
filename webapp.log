@@ -1126,3 +1126,7 @@ net/http.(*conn).serve(0xc000190000, 0x45b48c0, 0xc00019c000)
 	/usr/local/go/src/net/http/server.go:1925 +0x8ad
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:2969 +0x36c
+2021/02/06 17:33:12 users.go:115: no such table: sessions
+2021/02/06 17:33:12 main.go:19: no such table: sessions
+2021/02/06 18:07:49 route_auth.go:38: sql: no rows in result set
+2021/02/06 18:07:49 server.go:3095: http: superfluous response.WriteHeader call from todo_app/app/controllers.authenticate (route_auth.go:54)
